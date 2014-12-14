@@ -4,12 +4,51 @@
 
 \begin{document}
 
-This is my first LaTeX document with code:
+\begin{abstract}
+
+This is a \LaTeX document showing code.
+
+\end{abstract}
+
+\section{Plain code}
+
+% language=C++: highlight code fitting to the C++ programming language
+% showstringspaces=false: keep a blank space between 'Hello' and 'world'
+% frame=single: put a box around the code
+\begin{lstlisting}
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello world\n";
+}
+\end{lstlisting}
+
+\section{Added a frame and specific markup}
 
 % language=C++: highlight code fitting to the C++ programming language
 % showstringspaces=false: keep a blank space between 'Hello' and 'world'
 % frame=single: put a box around the code
 \begin{lstlisting}[language=C++,showstringspaces=false,frame=single]
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello world\n";
+}
+\end{lstlisting}
+
+\section{Added a label}
+
+% language=C++: highlight code fitting to the C++ programming language
+% showstringspaces=false: keep a blank space between 'Hello' and 'world'
+% frame=single: put a box around the code
+\begin{lstlisting}[
+  label=Some label,
+  caption=Code with an added label and caption,
+  captionpos=below,
+  language=C++,showstringspaces=false,frame=single
+]
 #include <iostream>
 
 int main()
