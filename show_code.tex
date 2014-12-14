@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\usepackage{listings}
+
+\begin{document}
+
+This is my first LaTeX document with code:
+
+% language=C++: highlight code fitting to the C++ programming language
+% showstringspaces=false: keep a blank space between 'Hello' and 'world'
+% frame=single: put a box around the code
+\begin{lstlisting}[language=C++,showstringspaces=false,frame=single]
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello world\n";
+}
+\end{lstlisting}
+
+\end{document}
